@@ -1,0 +1,11 @@
+id,experiment,test_accuracy_percent,training_time_seconds
+0,Baseline sigmoid SGD 0.1,22.22,0.0404
+1,ReLU,47.50,0.0400
+2,Two hidden layers 128 sigmoid,7.22,0.0792
+3,Adam 0.01,82.22,0.0471
+4,SGD learning rate 0.01,10.00,0.0378
+5,L2 weight decay 1e-4,22.22,0.0426
+6,Dropout 0.2,20.00,0.0448
+7,BatchNorm,79.17,0.0553
+8,ReLU Adam 0.01 BatchNorm average of 3 runs,95.83,0.0683
+failure,SGD learning rate 10.0,36.94,0.0566
