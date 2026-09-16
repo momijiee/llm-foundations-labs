@@ -23,13 +23,15 @@ Only completed work is listed below. Future directories will be added together w
 | Lab | Focus | Key result |
 | --- | --- | --- |
 | [01 — MLP digits experiment](labs/01-mlp-digits/) | Build and train an MLP in PyTorch from first principles | ReLU + Adam + BatchNorm achieved 95.83% test accuracy in three verification runs |
+| [02 — ConvLSTM bouncing balls](labs/02-convlstm-bouncing-balls/) | Controlled spatiotemporal next-frame prediction | A combined ConvLSTM configuration reached 0.003967 mean test MSE across three runs |
 
 ## Repository layout
 
 ```text
 .
 ├── labs/
-│   └── 01-mlp-digits/       # A self-contained experiment: code, notebook, results, and notes
+│   ├── 01-mlp-digits/       # A self-contained experiment: code, notebook, results, and notes
+│   └── 02-convlstm-bouncing-balls/
 ├── README.md                 # Course-level overview and learning trajectory
 └── LICENSE
 ```
