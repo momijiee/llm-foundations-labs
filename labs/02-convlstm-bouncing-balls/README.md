@@ -34,12 +34,17 @@ The best configuration combines two ConvLSTM layers, 64 hidden channels, a 5 × 
 
 ```text
 02-convlstm-bouncing-balls/
+├── notebooks/convlstm_bouncing_balls.ipynb  # step-by-step experiment record
 ├── src/run_experiments.py       # standalone runner for all controlled trials
 ├── results/                     # curated figures and measured tables
 ├── requirements.txt
 ├── requirements-verified.txt
 └── ENVIRONMENT.md
 ```
+
+The notebook follows the same protocol in the order of the experiment: data,
+baseline model, controlled comparisons, and three-run verification. It writes
+artifacts to this lab's `results/` directory when run from `notebooks/`.
 
 ## Reproduce
 
