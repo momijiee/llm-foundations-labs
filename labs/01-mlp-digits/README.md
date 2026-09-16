@@ -38,7 +38,9 @@ The deep Sigmoid model is deliberately retained as a negative result: its loss s
 ├── notebooks/mlp_digits_experiment.ipynb  # Step-by-step experiment record
 ├── src/run_experiments.py                  # Standalone reproducible runner
 ├── results/                                # Curated curves and measured results
-└── requirements.txt
+├── requirements.txt                        # Portable dependency ranges
+├── requirements-verified.txt               # Exact direct dependencies used here
+└── ENVIRONMENT.md                           # Verified platform and reproduction notes
 ```
 
 ## Reproduce
@@ -53,6 +55,7 @@ python src/run_experiments.py --output results/reproduced
 ```
 
 The script uses CPU by default and finishes quickly on this small dataset. CUDA is optional.
+See [ENVIRONMENT.md](ENVIRONMENT.md) for the verified package versions and exact-install option.
 
 ## Final configuration
 

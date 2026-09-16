@@ -1,0 +1,7 @@
+# Exact direct dependencies used for the committed Lab 01 results.
+# The code itself runs on CPU; the PyTorch CUDA build below reflects the verified machine.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+scikit-learn==1.7.2
+numpy==2.2.5
+matplotlib==3.10.1
