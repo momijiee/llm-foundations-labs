@@ -1,5 +1,8 @@
-# Local reports and course materials
-lesson1/
+# Local-only coursework assets (never stage or push)
+AGENTS.md
+WORKFLOW.md
+templates/
+lesson*/
 *.docx
 *.pdf
 report_work/
