@@ -16,6 +16,8 @@ venv/
 
 # Runtime output (curated figures and experiment_results.csv are tracked)
 **/results/reproduced/
+**/results/smoke/
+**/results/checkpoint_*.pt
 
 # OS/editor files
 .DS_Store

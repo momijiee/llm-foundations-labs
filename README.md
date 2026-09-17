@@ -24,6 +24,7 @@ Only completed work is listed below. Future directories will be added together w
 | --- | --- | --- |
 | [01 — MLP digits experiment](labs/01-mlp-digits/) | Build and train an MLP in PyTorch from first principles | ReLU + Adam + BatchNorm achieved 95.83% test accuracy in three verification runs |
 | [02 — ConvLSTM bouncing balls](labs/02-convlstm-bouncing-balls/) | Controlled spatiotemporal next-frame prediction | A combined ConvLSTM configuration reached 0.003967 mean test MSE across three runs |
+| [03 — Minimal character GPT](labs/03-min-llm/) | Train a decoder-only Transformer from scratch on CPU | A 502,656-parameter model reached 0.0258 training loss after 2,000 updates, while exposing clear small-corpus memorization |
 
 ## Repository layout
 
@@ -31,7 +32,8 @@ Only completed work is listed below. Future directories will be added together w
 .
 ├── labs/
 │   ├── 01-mlp-digits/       # A self-contained experiment: code, notebook, results, and notes
-│   └── 02-convlstm-bouncing-balls/
+│   ├── 02-convlstm-bouncing-balls/
+│   └── 03-min-llm/
 ├── README.md                 # Course-level overview and learning trajectory
 └── LICENSE
 ```
