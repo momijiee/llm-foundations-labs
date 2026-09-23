@@ -1,5 +1,17 @@
 # 01 — MLP Digits Experiment
 
+## 课程实验一查看入口
+
+本目录是基于 PyTorch 手写 MLP 的手写数字分类实验材料。建议按下面的顺序查看：
+
+1. **[打开完整实验 Notebook](notebooks/mlp_digits_experiment.ipynb)**：主要实验记录，包含数据处理、模型训练、控制变量实验、真实运行输出和结果分析。
+2. **[查看核心实现 `run_experiments.py`](src/run_experiments.py)**：独立运行脚本，包含 MLP、训练流程、评估和所有对照实验。
+3. **[查看实验结果汇总](results/experiment_results.csv)**：集中列出各组实验的测试准确率和训练时间。
+
+Notebook 是本实验的主要查看入口；`results/` 保留训练曲线和多次验证结果，便于核对结论。
+
+---
+
 A reproducible controlled study of a multilayer perceptron (MLP) on scikit-learn's `load_digits` dataset. I implemented the training loop directly in PyTorch and measured how design choices affect convergence and test accuracy.
 
 ## Question

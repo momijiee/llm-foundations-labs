@@ -1,5 +1,17 @@
 # 02 — ConvLSTM Bouncing Balls
 
+## 课程实验二查看入口
+
+本目录是使用 ConvLSTM 进行弹跳小球下一帧预测的完整实验材料。建议按下面的顺序查看：
+
+1. **[打开完整实验 Notebook](notebooks/convlstm_bouncing_balls.ipynb)**：主要实验记录，包含数据生成、模型实现、对照实验、真实运行输出和结果分析。
+2. **[查看核心实现 `run_experiments.py`](src/run_experiments.py)**：独立运行脚本，包含合成序列、ConvLSTM、训练评估和所有对照实验。
+3. **[查看实验结果汇总](results/experiment_results.csv)**：集中列出每组配置的测试 MSE、MAE 和训练时间。
+
+Notebook 是本实验的主要查看入口；`results/` 保留各组曲线、预测对比图和多次验证结果，便于核对结论。
+
+---
+
 A controlled PyTorch study of ConvLSTM for one-step prediction in a synthetic spatiotemporal sequence. A model observes several 32 × 32 frames of a bouncing ball and predicts the next frame.
 
 ## Question
