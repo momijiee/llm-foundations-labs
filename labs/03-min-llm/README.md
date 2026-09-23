@@ -1,5 +1,17 @@
 # 03 — Minimal Character GPT on CPU
 
+## 课程实验三查看入口
+
+本目录是“手搓最小 LLM：使用 CPU 训练字符级 GPT”的完整实验材料。建议按下面的顺序查看：
+
+1. **[打开完整实验 Notebook](experiment_record.ipynb)**：主要实验记录，包含代码阅读、环境检查、基线训练、控制变量实验、采样实验、真实运行输出和结果分析。
+2. **[查看核心实现 `min_llm.py`](min_llm.py)**：单文件实现字符级分词器、因果自注意力、Transformer、训练流程和文本采样。
+3. **[查看实验结果汇总](results/experiment_results.csv)**：集中列出各组配置、参数量、最终 loss 和训练时间。
+
+Notebook 是本实验的主要查看入口，所有正式实验均已运行，输出和曲线保留在文件中。`results/` 同时提供原始 loss 数据、训练曲线和部分生成文本，便于核对结论。
+
+---
+
 A compact, single-file implementation of a decoder-only Transformer trained from scratch on a small Chinese classical-poetry corpus. The experiment focuses on the mechanics of causal self-attention, residual Transformer blocks, next-character prediction, and autoregressive sampling.
 
 ## Question
