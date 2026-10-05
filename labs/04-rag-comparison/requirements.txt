@@ -1,0 +1,4 @@
+networkx>=3.2,<4
+numpy>=1.26,<3
+openai>=1.30,<3
+sentence-transformers>=3.0,<6
