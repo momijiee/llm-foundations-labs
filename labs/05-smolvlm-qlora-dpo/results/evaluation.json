@@ -1,0 +1,323 @@
+{
+  "baseline": [
+    {
+      "id": "P01",
+      "type": "count",
+      "gold": "2",
+      "pred": "1",
+      "correct": false
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "gold": "3",
+      "pred": "1",
+      "correct": false
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "gold": "2",
+      "pred": "2",
+      "correct": true
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "gold": "4",
+      "pred": "1",
+      "correct": false
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "gold": "3",
+      "pred": "1",
+      "correct": false
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "0",
+      "correct": false
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "形状是白色的。",
+      "correct": false
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "载身。",
+      "correct": false
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "其中，黄色的图形是黄色的图",
+      "correct": false
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "形状是小圆形。",
+      "correct": false
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "gold": "有",
+      "pred": "No.",
+      "correct": false
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "No.",
+      "correct": false
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "gold": "有",
+      "pred": "No.",
+      "correct": false
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "No.",
+      "correct": false
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "No",
+      "correct": false
+    }
+  ],
+  "sft": [
+    {
+      "id": "P01",
+      "type": "count",
+      "gold": "2",
+      "pred": "2个。",
+      "correct": true
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "gold": "3",
+      "pred": "3个。",
+      "correct": true
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "gold": "2",
+      "pred": "2个。",
+      "correct": true
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "gold": "4",
+      "pred": "4个。",
+      "correct": true
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "gold": "3",
+      "pred": "3个。",
+      "correct": true
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "方形。。。。。。。。。。。。。。。。。。。。。",
+      "correct": true
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "圆形。",
+      "correct": true
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "圆形。",
+      "correct": false
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "青色。",
+      "correct": false
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "包锦。",
+      "correct": false
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "gold": "有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": true
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": false
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "gold": "有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": true
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": false
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": false
+    }
+  ],
+  "sft_dpo": [
+    {
+      "id": "P01",
+      "type": "count",
+      "gold": "2",
+      "pred": "2个。.",
+      "correct": true
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "gold": "3",
+      "pred": "3个。",
+      "correct": true
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "gold": "2",
+      "pred": "2个。",
+      "correct": true
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "gold": "4",
+      "pred": "4个。.",
+      "correct": true
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "gold": "3",
+      "pred": "3个。",
+      "correct": true
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "外观。.",
+      "correct": false
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "圆形。",
+      "correct": true
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "Ochere.",
+      "correct": false
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "gold": "圆形",
+      "pred": "青色。.",
+      "correct": false
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "gold": "方形",
+      "pred": "Square.",
+      "correct": false
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "gold": "有",
+      "pred": "有。。。。。。。。。。。。。。。。。。。。。。。",
+      "correct": true
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "没有。",
+      "correct": true
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "gold": "有",
+      "pred": "有。.",
+      "correct": true
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "有。",
+      "correct": false
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "gold": "没有",
+      "pred": "有。",
+      "correct": false
+    }
+  ]
+}
