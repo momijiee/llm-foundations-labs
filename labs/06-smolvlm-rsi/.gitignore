@@ -1,0 +1,7 @@
+# Local experiment outputs; review and curate before any publication.
+hw6_imgs/
+sft_data.json
+rsi_memory.json
+sft_adapter/
+rsi_adapter/
+results/
