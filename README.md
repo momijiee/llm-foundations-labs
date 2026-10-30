@@ -26,6 +26,7 @@ Only completed work is listed below. Future directories will be added together w
 | [02 — ConvLSTM bouncing balls](labs/02-convlstm-bouncing-balls/) | Controlled spatiotemporal next-frame prediction | A combined ConvLSTM configuration reached 0.003967 mean test MSE across three runs |
 | [03 — Minimal character GPT](labs/03-min-llm/) | Train a decoder-only Transformer from scratch on CPU | A 502,656-parameter model reached 0.0258 training loss after 2,000 updates, while exposing clear small-corpus memorization |
 | [04 — RAG comparison](labs/04-rag-comparison/) | Compare Vector RAG, simplified GraphRAG, and WikiRAG on one labeled corpus | GraphRAG reached 1.000 multi-hop and 0.917 global Recall@5 across 20 questions |
+| [07 — CPU depth-controlled generation](labs/07-cpu-depth-control/) | Blender control maps and SD-Turbo with SD2.1 ControlNet on CPU | Three measured runs; stronger depth control preserved layout, while exact geometry remained imperfect |
 
 ## Repository layout
 

@@ -1,0 +1,4 @@
+label,resolution,steps,cfg,control_strength,threads,sampling_s,vae_decode_s,total_s,peak_process_tree_rss_mib
+A,512,4,1.2,0.9,12,43.52,17.83,69.7657184000127,4082.15625
+B,512,8,1.2,0.9,12,82.45,15.47,106.89138239994645,4081.3125
+C,512,4,1.2,0.5,12,38.13,12.85,58.75344989995938,4080.66796875
