@@ -1,0 +1,3 @@
+﻿model,n_layer,n_head,n_embd,block_size,vocab,params,approx_params,relative_error_percent,compression_ratio
+teacher,2,4,160,96,322,737280,732800,0.607638888888889,
+student,2,4,64,96,322,147456,145664,1.215277777777778,5.0

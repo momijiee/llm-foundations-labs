@@ -27,6 +27,7 @@ Only completed work is listed below. Future directories will be added together w
 | [03 — Minimal character GPT](labs/03-min-llm/) | Train a decoder-only Transformer from scratch on CPU | A 502,656-parameter model reached 0.0258 training loss after 2,000 updates, while exposing clear small-corpus memorization |
 | [04 — RAG comparison](labs/04-rag-comparison/) | Compare Vector RAG, simplified GraphRAG, and WikiRAG on one labeled corpus | GraphRAG reached 1.000 multi-hop and 0.917 global Recall@5 across 20 questions |
 | [07 — CPU depth-controlled generation](labs/07-cpu-depth-control/) | Blender control maps and SD-Turbo with SD2.1 ControlNet on CPU | Three measured runs; stronger depth control preserved layout, while exact geometry remained imperfect |
+| [08 — CPU language model distillation](labs/08-knowledge-distillation/) | Teacher/student character GPT, controlled KD, 16-way ablation and dynamic INT8 | 5× fewer parameters; KD reduced student held-out CE by 4.83%; INT8 reduced file size 2.31× without a measured speedup |
 
 ## Repository layout
 
@@ -36,7 +37,9 @@ Only completed work is listed below. Future directories will be added together w
 │   ├── 01-mlp-digits/       # A self-contained experiment: code, notebook, results, and notes
 │   ├── 02-convlstm-bouncing-balls/
 │   ├── 03-min-llm/
-│   └── 04-rag-comparison/
+│   ├── 04-rag-comparison/
+│   ├── 07-cpu-depth-control/
+│   └── 08-knowledge-distillation/
 ├── README.md                 # Course-level overview and learning trajectory
 └── LICENSE
 ```
