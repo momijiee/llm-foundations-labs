@@ -1,0 +1,170 @@
+21:40:05.341349 === reexecute-after-refund: 对照：退款落账后退出，接管时重新执行
+    [worker] 2026/11/23 21:40:06.732964 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:40:37.148102 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:40:37.151239 --- PASS reexecute-after-refund (31.808s)
+21:40:37.151978 === reexecute-dropped-response: 对照：退款落账后首次响应丢失，接管时重新执行
+21:41:09.014534 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:41:09.019462 --- PASS reexecute-dropped-response (31.867s)
+21:41:09.019751 === direct-refund: 金额低于阈值，直接退款（基本流程）
+21:41:10.494115 Run [synthetic-id] is completed
+21:41:10.496441 --- PASS direct-refund (1.477s)
+21:41:10.496978 === approved: 超过阈值，主管批准后退款（持久等待与定向回答）
+21:41:13.028575 Run [synthetic-id] is completed
+21:41:13.034677 --- PASS approved (2.537s)
+21:41:13.035666 === rejected: 主管拒绝（等待后的分支）
+21:41:15.596927 Run [synthetic-id] is completed
+21:41:15.600327 --- PASS rejected (2.564s)
+21:41:15.600600 === kill-while-waiting: 等待审批期间强杀 Worker，之后再审批（等待跨越进程故障）
+21:41:17.319960 Run [synthetic-id] is completed
+21:41:17.326660 --- PASS kill-while-waiting (1.726s)
+21:41:17.326838 === kill-after-refund: 退款请求已发出、结果提交前强杀 Worker → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+    [worker] 2026/11/23 21:41:18.713636 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:41:49.119092 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:41:49.156852 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:41:50.318876 Run [synthetic-id] is completed
+21:41:50.322868 --- PASS kill-after-refund (32.996s)
+21:41:50.323260 === dropped-response: 网关提交后丢弃响应 → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+21:41:51.821093 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:41:52.872256 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:41:54.010813 Run [synthetic-id] is completed
+21:41:54.012954 --- PASS dropped-response (3.689s)
+21:41:54.013727 === approval-timeout: 审批超时（超时处理）
+21:41:58.503671 --- PASS approval-timeout (4.49s)
+21:41:58.503910 === reexecute-after-refund: 对照：退款落账后退出，接管时重新执行
+    [worker] 2026/11/23 21:41:59.860664 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:42:30.349449 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:42:30.352062 --- PASS reexecute-after-refund (31.848s)
+21:42:30.352524 === reexecute-dropped-response: 对照：退款落账后首次响应丢失，接管时重新执行
+21:43:02.155159 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:43:02.160510 --- PASS reexecute-dropped-response (31.808s)
+21:43:02.160914 === direct-refund: 金额低于阈值，直接退款（基本流程）
+21:43:03.636635 Run [synthetic-id] is completed
+21:43:03.640596 --- PASS direct-refund (1.479s)
+21:43:03.640959 === approved: 超过阈值，主管批准后退款（持久等待与定向回答）
+21:43:06.295687 Run [synthetic-id] is completed
+21:43:06.297853 --- PASS approved (2.656s)
+21:43:06.298155 === rejected: 主管拒绝（等待后的分支）
+21:43:08.950905 Run [synthetic-id] is completed
+21:43:08.954138 --- PASS rejected (2.656s)
+21:43:08.954775 === kill-while-waiting: 等待审批期间强杀 Worker，之后再审批（等待跨越进程故障）
+21:43:10.807930 Run [synthetic-id] is completed
+21:43:10.814382 --- PASS kill-while-waiting (1.859s)
+21:43:10.814783 === kill-after-refund: 退款请求已发出、结果提交前强杀 Worker → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+    [worker] 2026/11/23 21:43:12.111076 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:43:42.460324 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:43:42.493354 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:43:43.641896 Run [synthetic-id] is completed
+21:43:43.646238 --- PASS kill-after-refund (32.831s)
+21:43:43.647169 === dropped-response: 网关提交后丢弃响应 → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+21:43:45.139468 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:43:46.176767 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:43:47.233152 Run [synthetic-id] is completed
+21:43:47.235337 --- PASS dropped-response (3.588s)
+21:43:47.235535 === approval-timeout: 审批超时（超时处理）
+21:43:51.816399 --- PASS approval-timeout (4.581s)
+21:43:51.817200 === reexecute-after-refund: 对照：退款落账后退出，接管时重新执行
+    [worker] 2026/11/23 21:43:53.249592 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:44:23.700012 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:44:23.702992 --- PASS reexecute-after-refund (31.884s)
+21:44:23.703408 === reexecute-dropped-response: 对照：退款落账后首次响应丢失，接管时重新执行
+21:44:55.732103 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:44:55.740665 --- PASS reexecute-dropped-response (32.037s)
+21:44:55.741171 === direct-refund: 金额低于阈值，直接退款（基本流程）
+21:44:57.369591 Run [synthetic-id] is completed
+21:44:57.373731 --- PASS direct-refund (1.632s)
+21:44:57.374122 === approved: 超过阈值，主管批准后退款（持久等待与定向回答）
+21:45:00.133961 Run [synthetic-id] is completed
+21:45:00.138417 --- PASS approved (2.764s)
+21:45:00.138982 === rejected: 主管拒绝（等待后的分支）
+21:45:02.908774 Run [synthetic-id] is completed
+21:45:02.913330 --- PASS rejected (2.774s)
+21:45:02.913798 === kill-while-waiting: 等待审批期间强杀 Worker，之后再审批（等待跨越进程故障）
+21:45:04.798850 Run [synthetic-id] is completed
+21:45:04.813802 --- PASS kill-while-waiting (1.9s)
+21:45:04.814240 === kill-after-refund: 退款请求已发出、结果提交前强杀 Worker → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+    [worker] 2026/11/23 21:45:06.275925 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:45:36.741745 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:45:36.793131 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:45:37.950513 Run [synthetic-id] is completed
+21:45:37.955586 --- PASS kill-after-refund (33.141s)
+21:45:37.956421 === dropped-response: 网关提交后丢弃响应 → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+21:45:39.479639 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:45:40.555813 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:45:41.646778 Run [synthetic-id] is completed
+21:45:41.651141 --- PASS dropped-response (3.694s)
+21:45:41.651782 === approval-timeout: 审批超时（超时处理）
+21:45:46.241807 --- PASS approval-timeout (4.59s)
+21:45:46.242360 === reexecute-after-refund: 对照：退款落账后退出，接管时重新执行
+    [worker] 2026/11/23 21:45:47.683761 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:46:18.306854 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:46:18.310714 --- PASS reexecute-after-refund (32.068s)
+21:46:18.311247 === reexecute-dropped-response: 对照：退款落账后首次响应丢失，接管时重新执行
+21:46:50.588764 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:46:50.593645 --- PASS reexecute-dropped-response (32.282s)
+21:46:50.594516 === direct-refund: 金额低于阈值，直接退款（基本流程）
+21:46:52.117816 Run [synthetic-id] is completed
+21:46:52.124820 --- PASS direct-refund (1.529s)
+21:46:52.125458 === approved: 超过阈值，主管批准后退款（持久等待与定向回答）
+21:46:54.840051 Run [synthetic-id] is completed
+21:46:54.844530 --- PASS approved (2.719s)
+21:46:54.846041 === rejected: 主管拒绝（等待后的分支）
+21:46:57.642366 Run [synthetic-id] is completed
+21:46:57.647763 --- PASS rejected (2.801s)
+21:46:57.648369 === kill-while-waiting: 等待审批期间强杀 Worker，之后再审批（等待跨越进程故障）
+21:46:59.442972 Run [synthetic-id] is completed
+21:46:59.455806 --- PASS kill-while-waiting (1.807s)
+21:46:59.456353 === kill-after-refund: 退款请求已发出、结果提交前强杀 Worker → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+    [worker] 2026/11/23 21:47:00.882764 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:47:31.521482 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:47:31.551990 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:47:32.709735 Run [synthetic-id] is completed
+21:47:32.713201 --- PASS kill-after-refund (33.256s)
+21:47:32.713894 === dropped-response: 网关提交后丢弃响应 → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+21:47:34.102270 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:47:35.174571 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:47:36.344435 Run [synthetic-id] is completed
+21:47:36.348021 --- PASS dropped-response (3.634s)
+21:47:36.348472 === approval-timeout: 审批超时（超时处理）
+21:47:40.950158 --- PASS approval-timeout (4.601s)
+21:47:40.950677 === reexecute-after-refund: 对照：退款落账后退出，接管时重新执行
+    [worker] 2026/11/23 21:47:42.390941 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:48:12.967472 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:48:12.972166 --- PASS reexecute-after-refund (32.021s)
+21:48:12.976409 === reexecute-dropped-response: 对照：退款落账后首次响应丢失，接管时重新执行
+21:48:45.053350 Run [synthetic-id] is completed
+E3 duplicate ledger_count=2
+21:48:45.065709 --- PASS reexecute-dropped-response (32.089s)
+21:48:45.068566 === direct-refund: 金额低于阈值，直接退款（基本流程）
+21:48:46.725139 Run [synthetic-id] is completed
+21:48:46.730093 --- PASS direct-refund (1.661s)
+21:48:46.732465 === approved: 超过阈值，主管批准后退款（持久等待与定向回答）
+21:48:49.490084 Run [synthetic-id] is completed
+21:48:49.497517 --- PASS approved (2.764s)
+21:48:49.498197 === rejected: 主管拒绝（等待后的分支）
+21:48:52.150090 Run [synthetic-id] is completed
+21:48:52.154490 --- PASS rejected (2.655s)
+21:48:52.154896 === kill-while-waiting: 等待审批期间强杀 Worker，之后再审批（等待跨越进程故障）
+21:48:54.063224 Run [synthetic-id] is completed
+21:48:54.080335 --- PASS kill-while-waiting (1.925s)
+21:48:54.081286 === kill-after-refund: 退款请求已发出、结果提交前强杀 Worker → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+    [worker] 2026/11/23 21:48:55.520815 DEMO_CRASH after Step turn-2/call-1/issue_refund/gateway callback, before commit run=[synthetic-id]
+21:49:26.040555 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:49:26.085073 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:49:27.164995 Run [synthetic-id] is completed
+21:49:27.168424 --- PASS kill-after-refund (33.087s)
+21:49:27.169298 === dropped-response: 网关提交后丢弃响应 → OUTCOME_UNKNOWN，账本一笔，管理员裁决后继续
+21:49:28.686979 Run [synthetic-id] is waiting OUTCOME_UNKNOWN
+21:49:29.743825 admin recorded result for position 8 (decision decision-[synthetic-id])
+21:49:30.928385 Run [synthetic-id] is completed
+21:49:30.935804 --- PASS dropped-response (3.766s)
+21:49:30.936250 === approval-timeout: 审批超时（超时处理）
+21:49:35.515716 --- PASS approval-timeout (4.579s)
